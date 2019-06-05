@@ -4,8 +4,9 @@ body{
     grid-template-areas:'header header header header'
     'nav nav nav nav'
     'section section aside aside'
-    'footer footer footer footer';
-    grid-template-rows: 20vh 15vh 50vh 30vh;
+    'footer footer footer footer'
+    'div div div div';
+    grid-template-rows: 20vh 15vh 50vh 30vh 20vh;
      grid-auto-columns: 25% 25% 25% 23.5%;
     grid-gap:10px;
     background-color:black;
@@ -62,4 +63,18 @@ footer p{
 footer p span{
 font-style: italic;
 color:white;
+}
+
+#footer{
+    grid-area: div;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer div{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+
 }
